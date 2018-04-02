@@ -1,7 +1,17 @@
 package com.city.testobjwar.controller;
 
-import java.awt.Color;
-import java.awt.Graphics2D;
+import com.sdk.WXPay;
+import com.swetake.util.Qrcode;
+import com.wxpay.MyWXPayConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.OutputStream;
 import java.io.PrintWriter;
@@ -10,19 +20,6 @@ import java.net.URLEncoder;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.sdk.WXPay;
-import com.swetake.util.Qrcode;
-import com.wxpay.MyWXPayConfig;
 
 @Controller
 @RequestMapping("/wx")

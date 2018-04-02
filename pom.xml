@@ -100,7 +100,7 @@
 			<version>${jedis.version}</version>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>com.googlecode.xmemcached</groupId>
 			<artifactId>xmemcached</artifactId>
 			<version>2.3.2</version>
@@ -110,7 +110,7 @@
 			<groupId>org.fusesource.leveldbjni</groupId>
 			<artifactId>leveldbjni-all</artifactId>
 			<version>1.8</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- common end -->
 		<dependency>
@@ -137,11 +137,11 @@
 		<!-- common end -->
 
 
-		<dependency>
+		<!--<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>${guava.version}</version>
-		</dependency>
+		</dependency>-->
 
 
 		<!-- httpcomponents -->
@@ -220,26 +220,26 @@
 			<version>${fastjson.version}</version>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>${gson.version}</version>
-		</dependency>
-		<dependency>
+		</dependency>-->
+		<!--<dependency>
 			<groupId>io.dropwizard.metrics</groupId>
 			<artifactId>metrics-bom</artifactId>
 			<version>4.0.2</version>
 			<type>pom</type>
 			<scope>import</scope>
-		</dependency>
+		</dependency>-->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>com.fasterxml.jackson</groupId>
 			<artifactId>jackson-bom</artifactId>
 			<version>${jackson.version}</version>
 			<type>pom</type>
 			<scope>import</scope>
-		</dependency>
+		</dependency>-->
 
 		<!-- json support end -->
 
@@ -280,13 +280,13 @@
 		<!--<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-dependencies</artifactId> 
 			<version>${spring.boot.version}</version> <type>pom</type> <scope>import</scope> 
 			</dependency> -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-framework-bom</artifactId>
 			<version>${spring.version}</version>
 			<type>pom</type>
 			<scope>import</scope>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -340,7 +340,7 @@
 
 		<!-- swagger2 -->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.7.0</version>
@@ -350,11 +350,11 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.7.0</version>
-		</dependency>
+		</dependency>-->
 
 
 		<!-- elasticsearch -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.elasticsearch</groupId>
 			<artifactId>elasticsearch</artifactId>
 			<version>${elastic.version}</version>
@@ -363,7 +363,7 @@
 			<groupId>org.elasticsearch.client</groupId>
 			<artifactId>transport</artifactId>
 			<version>${elastic.version}</version>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -399,7 +399,7 @@
 
 
 		<!-- dubbo -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>3.15.0-GA</version>
@@ -453,9 +453,9 @@
 					<groupId>org.jboss.netty</groupId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency>-->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.curator</groupId>
 			<artifactId>curator-framework</artifactId>
 			<version>${curator.version}</version>
@@ -464,12 +464,12 @@
 			<groupId>org.apache.curator</groupId>
 			<artifactId>curator-recipes</artifactId>
 			<version>${curator.version}</version>
-		</dependency>
+		</dependency>-->
 
 		<!--<dependency> <groupId>javax.validation</groupId> <artifactId>validation-api</artifactId> 
 			<version>1.1.0.Final</version> </dependency> -->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.sction</groupId>
 			<artifactId>phprpc</artifactId>
 			<version>3.0.2</version>
@@ -479,10 +479,10 @@
 			<groupId>com.belerweb</groupId>
 			<artifactId>pinyin4j</artifactId>
 			<version>2.5.1</version>
-		</dependency>
+		</dependency>-->
 
 		<!--Apache Shiro所需的jar包 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.crazycake</groupId>
 			<artifactId>shiro-redis</artifactId>
 			<version>2.4.2.1-RELEASE</version>
@@ -514,10 +514,10 @@
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
 			<version>${shiro.version}</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- poi start -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>${poi.version}</version>
@@ -531,15 +531,15 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>${poi.version}</version>
-		</dependency>
+		</dependency>-->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>alipay</groupId>
 			<artifactId>alipay</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/alipay-sdk-java20180309170622.jar</systemPath>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>Qrcode-create</groupId>
@@ -548,6 +548,7 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/Qrcode-create.jar</systemPath>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -571,6 +572,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>2.10</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/lib</outputDirectory>
+							<includeScope>system</includeScope>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 

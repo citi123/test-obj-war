@@ -1,3 +1,4 @@
+/*
 package com.city.testobjwar.controller;
 
 import java.util.HashMap;
@@ -117,3 +118,4 @@ public class ReceiveController {
 		// auth_app_id
     }
 }
+*/
