@@ -12,9 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/freemarker")
 public class FreemarkerController {
 
-	@RequestMapping("/test.htm")
+	@RequestMapping("/test")
 	public ModelAndView test(){
-		ModelAndView mv = new ModelAndView("test");
+		ModelAndView mv = new ModelAndView("freemarker/test");
 		
 		mv.addObject("name", "张三");
 		

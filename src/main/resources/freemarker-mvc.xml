@@ -21,6 +21,8 @@
     <!--静态资源-->
     <mvc:default-servlet-handler/>
 
+    <mvc:annotation-driven />
+
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="false">
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -75,7 +77,7 @@
         class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="freemarkerSettings" ref="freemarkerConfiguration" />
         <property name="templateLoaderPath">
-            <value>/freemarker</value>
+            <value>/</value>
         </property>
         <property name="freemarkerVariables">
             <map>
@@ -96,6 +98,16 @@
         <property name="contentType" value="text/html; charset=utf-8" />
         <property name="suffix" value=".ftl" />
         <property name="order" value="0" />
+        <property name="prefix" value="/"/>
     </bean>
-	
+
+    <bean id="jspViewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".jsp" />
+        <property name="order" value="1"/>
+    </bean>
+
 </beans>

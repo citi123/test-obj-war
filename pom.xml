@@ -533,13 +533,13 @@
 			<version>${poi.version}</version>
 		</dependency>-->
 
-		<!--<dependency>
+		<dependency>
 			<groupId>alipay</groupId>
 			<artifactId>alipay</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/alipay-sdk-java20180309170622.jar</systemPath>
-		</dependency>-->
+		</dependency>
 
 		<dependency>
 			<groupId>Qrcode-create</groupId>

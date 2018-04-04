@@ -1,4 +1,3 @@
-/*
 package com.city.testobjwar.controller;
 
 import java.util.HashMap;
@@ -20,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.alipay.api.AlipayConstants;
 
 @Controller
-@RequestMapping("/receive")
+@RequestMapping("/jsp/receive")
 public class ReceiveController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ReceiveController.class);
@@ -118,4 +117,3 @@ public class ReceiveController {
 		// auth_app_id
     }
 }
-*/

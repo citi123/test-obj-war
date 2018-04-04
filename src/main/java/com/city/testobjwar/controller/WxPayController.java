@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/wx")
+@RequestMapping("/jsp/wx")
 public class WxPayController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(WxPayController.class);
