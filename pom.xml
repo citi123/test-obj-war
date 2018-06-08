@@ -559,7 +559,7 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.1</version>
 				<configuration>
-					<port>2090</port>
+					<port>2099</port>
 					<path>/</path>
 					<uriEncoding>UTF-8</uriEncoding>
 					<finalName>test-obj-war</finalName>
@@ -585,6 +585,14 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
 			</plugin>
 		</plugins>
 

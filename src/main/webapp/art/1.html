@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+    <!--<script type="text/javascript" src="http://raw.githubusercontent.com/aui/art-template/master/lib/template-web.js"></script>-->
+    <script src="template-web.js"></script>
+
+    <script type="text/javascript">
+        function aa(){
+            var data = {
+                name : "张三",
+                origin : "<div style='color: red;'>张三</div>",
+                ifcondition : 4,
+                addressList : ["云南","四川","贵州"]
+            };
+            var html = template("test",data);
+            document.getElementById("out").innerHTML = html;
+
+            var str = "Hi,{{name}}";
+            var render = template.compile(str);
+            var h = render({name:"李四"});
+            alert(h);
+
+            h = template.render(str,{name : "王麻子"});
+            alert(h);
+        }
+    </script>
+
+</head>
+<body>
+    <button onclick="aa()">AAAAA</button>
+    <div>
+        <script id="test" type="text/html">
+
+            <fieldset>
+                <legend>输出</legend>
+                {{ name }}
+                <%= name %>
+            </fieldset>
+
+            <fieldset>
+                <legend>转义</legend>
+                {{origin}}
+                {{@ origin }}
+                <%- origin %>
+            </fieldset>
+
+            <fieldset>
+                <legend>if else</legend>
+                {{if ifcondition}}
+                    aaaaaa
+                {{/if}}
+
+                {{if ifcondition == 1}}
+                    1
+                {{else if ifcondition == 2}}
+                    2
+                {{else if ifcondition == 3}}
+                    3
+                {{else}}
+                    NaN
+                {{/if}}
+
+                <br>
+
+                <% if(ifcondition){ %>
+                    bbbb
+                <% } %>
+
+                <% if(ifcondition == 1){ %>
+                    1
+                <% }else if(ifcondition == 2){ %>
+                    2
+                <% }else if(ifcondition == 3){ %>
+                    3
+                <% }else{ %>
+                    NaN
+                <% } %>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>循环</legend>
+                {{each addressList}}
+                    {{$index}} {{$value}}
+                {{/each}}
+                <br>
+                <% for(var i = 0 ; i < addressList.length ; i ++){ %>
+                    <%= i %> {{i}}
+
+                    <%=addressList[i] %> {{addressList[i]}}
+                <% } %>
+            </fieldset>
+
+        </script>
+    </div>
+
+    <div id="out">
+
+    </div>
+</body>
+</html>
